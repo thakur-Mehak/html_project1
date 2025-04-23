@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/volunteer.css">
+    <title>Volunteer Registration</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Volunteer Registration</h1>
+        <form action="#" method="post">
+            <label for="firstName">First name *</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last name *</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="mobile">Mobile phone</label>
+            <input type="tel" id="mobile" name="mobile">
+
+            <label>What can you help with?</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="repair" name="helpWith" value="repair">
+                <label for="repair">Repairing bikes</label>
+                <input type="checkbox" id="phoneCalls" name="helpWith" value="phoneCalls">
+                <label for="phoneCalls">Taking phone calls</label>
+                <input type="checkbox" id="eventSetup" name="helpWith" value="eventSetup">
+                <label for="eventSetup">Event setup</label>
+                <input type="checkbox" id="doorToDoor" name="helpWith" value="doorToDoor">
+                <label for="doorToDoor">Door-to-Door</label>
+                <input type="checkbox" id="officeWork" name="helpWith" value="officeWork">
+                <label for="officeWork">Office Work</label>
+            </div>
+
+            <label for="comments">Why do you want to join our campaign?</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+
+            <div class="subscribe">
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Sign me up to support our email list!</label>
+            </div>
+
+            <a href="./index.html"><button type="submit">Submit</button></a>
+        </form>
+    </div>
+</body>
+</html>
